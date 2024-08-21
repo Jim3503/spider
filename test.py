@@ -3,7 +3,7 @@ Author: Jim3503 jiming1920@mails.jlu.edu.cn
 Date: 2024-08-20 18:20:50
 LastEditors: Jim3503 jiming1920@mails.jlu.edu.cn
 <<<<<<< HEAD
-LastEditTime: 2024-08-21 11:25:31
+LastEditTime: 2024-08-21 11:46:36
 =======
 LastEditTime: 2024-08-21 11:05:51
 >>>>>>> ec34da09d1c2aee30540c8e5e62754061a9f5c6b
@@ -43,10 +43,7 @@ for epoch in range(1000):
     optimizer.step()
     print(f'Epoch {epoch + 1}/1000, Loss: {loss.item()}')
 
-# Save the model
-<<<<<<< HEAD
-torch.save(model.state_dict(), 'model.pth')
-# Load the model
-=======
-torch.save(model.state_dict(), 'model.pth')
->>>>>>> ec34da09d1c2aee30540c8e5e62754061a9f5c6b
+# Make a prediction
+x_new = torch.tensor([[6.0]])
+y_new = model(x_new)
+print(f'Prediction after training: f(6) = {y_new.item()}')
