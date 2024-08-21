@@ -2,7 +2,11 @@
 Author: Jim3503 jiming1920@mails.jlu.edu.cn
 Date: 2024-08-20 18:20:50
 LastEditors: Jim3503 jiming1920@mails.jlu.edu.cn
+<<<<<<< HEAD
 LastEditTime: 2024-08-21 11:25:31
+=======
+LastEditTime: 2024-08-21 11:05:51
+>>>>>>> ec34da09d1c2aee30540c8e5e62754061a9f5c6b
 FilePath: \spider\test.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -40,5 +44,9 @@ for epoch in range(1000):
     print(f'Epoch {epoch + 1}/1000, Loss: {loss.item()}')
 
 # Save the model
+<<<<<<< HEAD
 torch.save(model.state_dict(), 'model.pth')
 # Load the model
+=======
+torch.save(model.state_dict(), 'model.pth')
+>>>>>>> ec34da09d1c2aee30540c8e5e62754061a9f5c6b
